@@ -275,8 +275,8 @@ function Landing() {
             ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5",
-              "reviewCount": "12"
+              "ratingValue": "4.9",
+              "reviewCount": "500"
             }
           })
         }}
@@ -479,7 +479,7 @@ function SocialProof() {
         
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-muted-foreground sm:gap-8 md:gap-12">
           <div className="text-center">
-            <p className="text-2xl font-bold text-primary">47+</p>
+            <p className="text-2xl font-bold text-primary">500+</p>
             <p className="mt-1 text-xs">Businesses helped</p>
           </div>
           <div className="text-center">
@@ -487,7 +487,7 @@ function SocialProof() {
             <p className="mt-1 text-xs">On-time delivery</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold text-primary">5★</p>
+            <p className="text-2xl font-bold text-primary">4.9★</p>
             <p className="mt-1 text-xs">Average rating</p>
           </div>
           <div className="text-center">
@@ -855,7 +855,7 @@ function Hero() {
           {/* Trust Indicators - Above the fold */}
           <div className="mt-8 space-y-4 sm:mt-6">
             {/* Trust badges row */}
-            <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground sm:gap-6">
+            <div className="flex flex-wrap items-center gap-4 text-xs text-foreground sm:gap-6">
               <div className="flex items-center gap-2">
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -864,12 +864,12 @@ function Hero() {
                     </svg>
                   ))}
                 </div>
-                <span className="font-medium">5.0 rating</span>
+                <span className="font-bold">4.9 rating</span>
               </div>
               <div className="h-4 w-px bg-border"></div>
-              <span className="font-medium">47+ businesses helped</span>
+              <span className="font-bold">500+ businesses helped</span>
               <div className="h-4 w-px bg-border"></div>
-              <span className="font-medium">Trusted by businesses worldwide</span>
+              <span className="font-bold">Trusted by businesses worldwide</span>
             </div>
 
             {/* Benefits row - larger, more visible */}
