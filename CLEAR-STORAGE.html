@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Storage & Reset Banner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        button {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #059669;
+            transform: scale(1.05);
+        }
+        .red {
+            background: #ef4444;
+        }
+        .red:hover {
+            background: #dc2626;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .success {
+            color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Reset Countdown Banner</h1>
+        <p>Click the button below to clear the storage and see the banner again!</p>
+        
+        <button onclick="clearAndReload()">✅ Clear Storage & Reload</button>
+        <br>
+        <button class="red" onclick="clearOnly()">🗑️ Just Clear (Don't Reload)</button>
+        
+        <div id="status"></div>
+    </div>
+
+    <script>
+        function clearAndReload() {
+            localStorage.removeItem('lunexweb_first_time_offer');
+            document.getElementById('status').innerHTML = '<span class="success">✅ Storage Cleared! Redirecting to website...</span>';
+            setTimeout(() => {
+                window.location.href = 'http://localhost:8080/#services';
+            }, 1000);
+        }
+
+        function clearOnly() {
+            localStorage.removeItem('lunexweb_first_time_offer');
+            document.getElementById('status').innerHTML = '<span class="success">✅ Storage Cleared! Now refresh your website manually.</span>';
+        }
+    </script>
+</body>
+</html>

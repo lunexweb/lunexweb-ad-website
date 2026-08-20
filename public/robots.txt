@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lunexweb.co.za/sitemap.xml
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /admin/
+
+# Allow specific important pages
+Allow: /
+Allow: /services
+Allow: /work
+Allow: /contact
