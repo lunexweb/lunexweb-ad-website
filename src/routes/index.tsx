@@ -467,6 +467,16 @@ function SocialProof() {
         <p className="mb-6 text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
           Trusted by businesses across South Africa
         </p>
+        
+        {/* Trust Badge */}
+        <div className="mx-auto mb-8 flex justify-center">
+          <img
+            src={trustBadge}
+            alt="Trusted by South African businesses"
+            className="h-auto w-full max-w-[280px] sm:max-w-[320px]"
+          />
+        </div>
+        
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-muted-foreground sm:gap-8 md:gap-12">
           <div className="text-center">
             <p className="text-2xl font-bold text-primary">47+</p>
@@ -895,13 +905,6 @@ function Hero() {
               width={1536}
               height={1024}
               className="h-[420px] w-full object-cover xl:h-[460px]"
-            />
-          </div>
-          <div className="panel absolute -bottom-2 -left-2 overflow-hidden p-0 shadow-lg">
-            <img
-              src={trustBadge}
-              alt="Trusted by South African businesses"
-              className="h-auto w-full max-w-[200px]"
             />
           </div>
         </div>
