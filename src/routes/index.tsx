@@ -464,8 +464,8 @@ function SocialProof() {
   return (
     <section className="border-b border-border bg-surface/40">
       <div className="mx-auto max-w-[1200px] px-4 py-8 sm:px-6 sm:py-10">
-        <p className="mb-6 text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Trusted by businesses across South Africa
+        <p className="mb-6 text-center text-sm font-bold text-foreground sm:text-base">
+          Trusted by businesses worldwide
         </p>
         
         {/* Trust Badge */}
