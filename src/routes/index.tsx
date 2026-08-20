@@ -821,20 +821,20 @@ function Hero() {
   
   return (
     <section id="top" className="grid-glow relative overflow-hidden border-b border-border" itemScope itemType="https://schema.org/WebPageElement">
-      <div className="mx-auto grid max-w-[1200px] items-center gap-6 px-4 py-4 sm:px-6 sm:py-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:py-8">
+      <div className="mx-auto grid max-w-[1200px] items-center gap-6 px-4 py-2 sm:px-6 sm:py-3 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:py-4">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary sm:text-[11px]">
             <IconPin className="size-3.5" /> South Africa
           </span>
-          <h1 className="mt-5 text-[2rem] font-semibold leading-[1.08] tracking-tight sm:mt-4 sm:text-[1.9rem] md:text-4xl lg:text-[3.1rem]">
+          <h1 className="mt-4 text-[2rem] font-semibold leading-[1.08] tracking-tight sm:mt-3 sm:text-[1.9rem] md:text-4xl lg:text-[3.1rem]">
             <span itemProp="name">We help your business</span>
             <span className="text-primary"> get found, get booked, grow</span>
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-4 sm:text-[15px] md:text-base" itemProp="description">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-3 sm:text-[15px] md:text-base" itemProp="description">
             Websites, systems, social media and ads — all in one place. Everything you need to look professional and win more customers.
           </p>
 
-          <div className="mt-7 flex flex-col gap-3 sm:mt-6 sm:flex-row sm:items-center">
+          <div className="mt-5 flex flex-col gap-3 sm:mt-4 sm:flex-row sm:items-center">
             <a
               href={`https://wa.me/27789992503?text=${encodeURIComponent("Hi, I'd like to claim my FIRST20 discount (20% off first project)")}`}
               target="_blank"
@@ -853,7 +853,7 @@ function Hero() {
           </div>
 
           {/* Trust Indicators - Above the fold */}
-          <div className="mt-8 space-y-4 sm:mt-6">
+          <div className="mt-5 space-y-3 sm:mt-4">
             {/* Trust badges row */}
             <div className="flex flex-wrap items-center gap-4 text-xs text-foreground sm:gap-6">
               <div className="flex items-center gap-2">
@@ -916,14 +916,14 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative hidden lg:block lg:-mt-32">
+        <div className="relative hidden lg:block lg:-mt-16">
           <div className="panel overflow-hidden p-0">
             <img
               src={heroImg}
               alt="Lunexweb developers building a custom business system"
               width={1536}
               height={1024}
-              className="h-[420px] w-full object-cover xl:h-[460px]"
+              className="h-[380px] w-full object-cover xl:h-[420px]"
             />
           </div>
         </div>
