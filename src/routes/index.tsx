@@ -880,6 +880,15 @@ function Hero() {
                 </svg>
                 078 999 2503
               </a>
+              <a 
+                href="https://wa.me/27789992503" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 font-bold transition-colors hover:text-primary"
+              >
+                <IconWhatsapp className="size-4" />
+                078 999 2503
+              </a>
             </div>
 
             {/* Benefits row - larger, more visible */}
