@@ -52,7 +52,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "We build websites, custom business systems, manage social media and run ads for South African businesses. Get more customers, save time, grow your business. Free consultation.",
+          "We build websites, custom business systems, WhatsApp chatbots, manage social media and run ads for South African businesses. Get more customers, save time, grow your business. Free consultation.",
       },
       {
         name: "keywords",
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Websites, systems, social media and ads for South African businesses. One team for everything you need to grow.",
+          "Websites, systems, WhatsApp chatbots, social media and ads for South African businesses. One team for everything you need to grow.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_ZA" },
@@ -118,6 +118,12 @@ const SERVICES = [
     title: "Custom business systems",
     body: "Your team stops wasting hours on spreadsheets and WhatsApp. Everything they need in one place. Built exactly how you work.",
     points: ["Quotes and invoices sent automatically", "Live dashboard you can trust", "Your team gets trained"],
+  },
+  {
+    icon: IconWhatsapp,
+    title: "WhatsApp chatbots",
+    body: "Answer customer questions automatically. 24/7. Take orders, book appointments, answer FAQs. Your customers get instant replies even when you sleep.",
+    points: ["Works 24/7 automatically", "Answers common questions instantly", "Takes orders and bookings"],
   },
   {
     icon: IconPlug,
@@ -270,6 +276,7 @@ function Landing() {
             "serviceType": [
               "Web Development",
               "Custom Business Systems",
+              "WhatsApp Chatbots",
               "Social Media Management",
               "Digital Advertising"
             ],
@@ -831,7 +838,7 @@ function Hero() {
             <span className="text-primary"> get found, get booked, grow</span>
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-3 sm:text-[15px] md:text-base" itemProp="description">
-            Websites, systems, social media and ads — all in one place. Everything you need to look professional and win more customers.
+            Websites, systems, WhatsApp chatbots, social media and ads — all in one place. Everything you need to look professional and win more customers.
           </p>
 
           <div className="mt-5 flex flex-col gap-3 sm:mt-4 sm:flex-row sm:items-center">
@@ -1150,7 +1157,7 @@ function Services() {
       <div className="mx-auto max-w-[1200px] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
         <SectionHead
           eyebrow="What we do"
-          title="Websites, systems, social media and ads"
+          title="Websites, systems, WhatsApp chatbots, social media and ads"
           body="All in one place. Everything you need to look professional and win more customers."
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-2">

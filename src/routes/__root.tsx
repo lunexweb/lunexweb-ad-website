@@ -73,21 +73,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lunexweb — Websites, Systems, Social Media & Ads | South Africa" },
+      { title: "Lunexweb — Websites, Systems, WhatsApp Chatbots, Social Media & Ads | South Africa" },
       {
         name: "description",
         content:
-          "We build websites, custom business systems, manage social media and run ads for South African businesses. Get more customers, save time, grow your business.",
+          "We build websites, custom business systems, WhatsApp chatbots, manage social media and run ads for South African businesses. Get more customers, save time, grow your business.",
       },
       {
         name: "keywords",
         content:
-          "web development South Africa, custom business systems, social media management, Google ads, website design, business automation",
+          "web development South Africa, custom business systems, WhatsApp chatbots, social media management, Google ads, website design, business automation",
       },
       { property: "og:title", content: "Lunexweb" },
       {
         property: "og:description",
-        content: "Websites, systems, social media and ads for South African businesses. One team for everything you need to grow.",
+        content: "Websites, systems, WhatsApp chatbots, social media and ads for South African businesses. One team for everything you need to grow.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_ZA" },
