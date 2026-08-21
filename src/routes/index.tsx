@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImg from "@/assets/hero.jpg";
 import trustBadge from "@/assets/trust.jpg";
+import botImg from "@/assets/bot.jpg";
 import reviewPriya from "@/assets/Priya N.jpg";
 import reviewThabo from "@/assets/Thabo M.jpg";
 import reviewJohan from "@/assets/Johan V.jpg";
@@ -82,6 +83,7 @@ export const Route = createFileRoute("/")({
 
 const NAV = [
   { href: "#services", label: "Services" },
+  { href: "#chatbot", label: "Chatbot" },
   { href: "#process", label: "Process" },
   { href: "#work", label: "Work" },
   { href: "#packages", label: "Packages" },
@@ -109,9 +111,9 @@ const PAINS = [
 const SERVICES = [
   {
     icon: IconCode,
-    title: "Websites that get you customers",
-    body: "Visitors see what you do. They understand it. They contact you. Fast, clear, and gets you calls.",
-    points: ["Loads in under 2 seconds", "Contact forms that actually work", "Shows up on Google"],
+    title: "Websites & ecommerce stores",
+    body: "From basic to premium. Visitors see what you do, buy your products, contact you. Fast online stores that take orders and payments automatically.",
+    points: ["Basic to premium stores", "Accept payments online", "Shows up on Google"],
   },
   {
     icon: IconWorkflow,
@@ -121,9 +123,9 @@ const SERVICES = [
   },
   {
     icon: IconWhatsapp,
-    title: "WhatsApp chatbots",
-    body: "Answer customer questions automatically. 24/7. Take orders, book appointments, answer FAQs. Your customers get instant replies even when you sleep.",
-    points: ["Works 24/7 automatically", "Answers common questions instantly", "Takes orders and bookings"],
+    title: "AI chatbots (any platform)",
+    body: "WhatsApp, website, Facebook, any system. Answer questions 24/7. Take orders, book appointments, answer FAQs automatically. Your customers get instant replies.",
+    points: ["Works on any platform 24/7", "Integrates with your systems", "Takes orders and bookings"],
   },
   {
     icon: IconPlug,
@@ -325,6 +327,7 @@ function Landing() {
       <Hero />
       <LogoStrip />
       <SocialProof />
+      <ChatbotShowcase />
       {/* PAIN: Show the problems */}
       <Pains />
       {/* TRUST: Social proof - work we've done */}
@@ -500,6 +503,85 @@ function SocialProof() {
           <div className="text-center">
             <p className="text-2xl font-bold text-primary">14hrs</p>
             <p className="mt-1 text-xs">Saved per week</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ChatbotShowcase() {
+  return (
+    <section id="chatbot" className="border-b border-border bg-background">
+      <div className="mx-auto max-w-[1200px] px-4 py-16 sm:px-6 sm:py-20 lg:py-24">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          {/* Image */}
+          <div className="order-2 lg:order-1">
+            <div className="panel overflow-hidden p-0">
+              <img
+                src={botImg}
+                alt="AI Chatbot automation for WhatsApp, websites and business systems"
+                width={800}
+                height={600}
+                loading="lazy"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="order-1 lg:order-2">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+              AI Automation
+            </span>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
+              Chatbots that work while you sleep
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Integrate AI chatbots into any system — WhatsApp, your website, Facebook, or custom platforms. Answer customer questions instantly, take orders, book appointments, and handle FAQs 24/7.
+            </p>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <IconWhatsapp className="size-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">WhatsApp Integration</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">Connect to your WhatsApp Business. Respond to customers instantly, automatically.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <IconCode className="size-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Website Chat Widget</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">Add a smart chatbot to your website. Answers questions, captures leads, books appointments.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <IconPlug className="size-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">System Integration</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">Connect to your CRM, booking system, or database. Your bot has real-time access to your data.</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
+            >
+              <IconWhatsapp className="size-4.5" />
+              Get Your Chatbot
+            </a>
           </div>
         </div>
       </div>
@@ -834,11 +916,11 @@ function Hero() {
             <IconPin className="size-3.5" /> South Africa
           </span>
           <h1 className="mt-4 text-[2rem] font-semibold leading-[1.08] tracking-tight sm:mt-3 sm:text-[1.9rem] md:text-4xl lg:text-[3.1rem]">
-            <span itemProp="name">We help your business</span>
-            <span className="text-primary"> get found, get booked, grow</span>
+            <span itemProp="name">Don't work for money,</span>
+            <span className="text-primary"> Let money work for you!</span>
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-3 sm:text-[15px] md:text-base" itemProp="description">
-            Websites, systems, WhatsApp chatbots, social media and ads — all in one place. Everything you need to look professional and win more customers.
+            Websites, ecommerce stores, business systems, AI chatbots (WhatsApp, website, any platform), social media and ads. Automate your business. Work less. Earn more.
           </p>
 
           <div className="mt-5 flex flex-col gap-3 sm:mt-4 sm:flex-row sm:items-center">
